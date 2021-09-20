@@ -1,0 +1,13 @@
+[Unit]
+Description=Cobbler Helper Daemon
+After=syslog.target network.target
+Wants=@@httpd_service@@
+
+[Service]
+ExecStart=/usr/bin/cobblerd -F
+PrivateTmp=yes
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+

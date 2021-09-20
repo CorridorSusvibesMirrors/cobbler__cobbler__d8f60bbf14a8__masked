@@ -1,0 +1,8 @@
+netaddr
+Cheetah3
+dnspython
+pyyaml
+distro
+sphinx_rtd_theme
+file-magic
+schema
